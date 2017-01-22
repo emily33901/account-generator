@@ -176,6 +176,7 @@ $('#create').on('click', function() {
 		} else {
 			console.log(request.responseText);
 			$('#status').text('failure');
+			RefreshCaptcha();
 		}
 		console.log(request.responseText);
 	});

@@ -52,7 +52,7 @@ var gid = 0;
 
 function RefreshCaptcha() {
 
-	request('https://store.steampowered.com/join/refreshcaptcha?count=1', null, 'GET', function(request)
+	request('https://crossorigin.me/https://store.steampowered.com/join/refreshcaptcha?count=1', null, 'GET', function(request)
     {
         //callback(request.responseText); // Another callback here
         if (request.status) console.log(request.status);
@@ -60,7 +60,7 @@ function RefreshCaptcha() {
 		console.log(d);
 		gid = d.gid;
 
-		$('#captcha-img').attr('src', 'https://store.steampowered.com/public/captcha.php?gid=' + gid);
+		$('#captcha-img').attr('src', 'https://crossorigin.me/https://store.steampowered.com/public/captcha.php?gid=' + gid);
     });
 }
 
@@ -167,7 +167,7 @@ $('#create').on('click', function() {
 
 	console.log(newData);
 
-	request('https://store.steampowered.com/join/createaccount/', newData, 'post', function(request) 
+	request('https://crossorigin.me/https://store.steampowered.com/join/createaccount/', newData, 'post', function(request) 
 	{
 		if (request.responseText.indexOf('true') > 0) {
 			//socket.send(JSON.stringify({ status: "success", data: data }));

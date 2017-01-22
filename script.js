@@ -181,7 +181,7 @@ $('#create').on('click', function() {
 		}
 		console.log(request.responseText);
 		RefreshCaptcha();
-		Update();
+		Update(); // update!
 	});
 	//ws.send(JSON.stringify(data));
 	$('#status').text('waiting for response...');

@@ -1,0 +1,54 @@
+<html>
+<head>
+	<script src="randexp.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h2>b1g steam account generator</h2>
+	<h3>by d4rkc4t</h3>
+	##'s will be replaced with number <input id="number" type="text" placeholder="####"><br>
+	<table>
+		<tr>
+			<td>Username<td>
+			<td><input id="username-r" type="checkbox">Random</td>
+			<td><input id="username-re" type="text" placeholder="RegExp"></td>
+			<td><input id="username" type="text" placeholder="Username..."></td>
+			<td><span id="username-ag"></span></td>
+		</tr>
+		<tr>
+			<td>Login<td>
+			<td><input id="login-r" type="checkbox">Random</td>
+			<td><input id="login-re" type="text" placeholder="RegExp" value="[a-z0-9]{20}"></td>
+			<td><input id="login" type="text" placeholder="Login..."></td>
+			<td><span id="login-ag"></span></td>
+		</tr>
+		<tr>
+			<td>E-Mail<td>
+			<td><input id="email-r" type="checkbox">Random</td>
+			<td><input id="email-re" type="text" placeholder="RegExp" value="[a-z0-9]{20}@[a-z0-9]{3}\.com"></td>
+			<td><input id="email" type="text" placeholder="E-Mail..."></td>
+			<td><span id="email-ag"></span></td>
+		</tr>
+		<tr>
+			<td>Password<td>
+			<td><input id="password-r" type="checkbox">Random</td>
+			<td><input id="password-re" type="text" placeholder="RegExp" value="[a-z0-9]{20}"></td>
+			<td><input id="password" type="password" placeholder="Password..."></td>
+			<td><span id="password-ag"></span></td>
+		</tr>
+	</table>
+	<div>
+		<img id="captcha-img">
+		<input id="refresh" type="button" value="Refresh CAPTCHA">
+		<input id="captcha" type="text" placeholder="captcha">
+		<input id="create" type="button" value="Create"><br/>
+	</div>
+	<div id="status">click 'create'</div>
+	<h1>
+		created accounts:
+	</h1>
+	<div id="createdaccounts"></div>
+</body>
+</html>

@@ -167,6 +167,7 @@ $('#create').on('click', function() {
 
 	console.log(newData);
 
+	// this is the page dont change it
 	request('https://store.steampowered.com/join/createaccount/', newData, 'post', function(request) 
 	{
 		if (request.responseText.indexOf('true') > 0) {

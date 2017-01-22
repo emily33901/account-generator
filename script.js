@@ -174,6 +174,7 @@ $('#create').on('click', function() {
 			//socket.send(JSON.stringify({ status: "success", data: data }));
 			$('#status').text('success');
 			$('#createdaccounts').append(data.login + ' ' + data.pwd + ' ' + data.mail + '<br>');
+			Update();
 		} else {
 			console.log(request.responseText);
 			$('#status').text('failure');

@@ -173,7 +173,7 @@ $('#create').on('click', function() {
 		if (request.responseText.indexOf('true') > 0) {
 			//socket.send(JSON.stringify({ status: "success", data: data }));
 			$('#status').text('success');
-			$('#createdaccounts').append(data.login + ' ' + data.pwd + ' ' + data.mail + '\n');
+			$('#createdaccounts').append(data.login + ' ' + data.pwd + ' ' + data.mail + '<br>');
 		} else {
 			console.log(request.responseText);
 			$('#status').text('failure');

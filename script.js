@@ -65,6 +65,7 @@ function RefreshCaptcha() {
 }
 
 function Update() {
+	console.log("update!");
 	var login = $('#login').val();
 	var email = $('#email').val();
 	var password = $('#password').val();

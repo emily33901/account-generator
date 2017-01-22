@@ -173,7 +173,7 @@ $('#create').on('click', function() {
 		if (request.responseText.indexOf('true') > 0) {
 			//socket.send(JSON.stringify({ status: "success", data: data }));
 			$('#status').text('success');
-			$('#createdaccounts').append(data.login + ' ' + data.pwd + ' ' + data.mail + '<br>');
+			$('#createdaccounts').append(data.login + ' ' + data.pwd + ' ' + data.mail).append('<br />');
 			Update();
 		} else {
 			console.log(request.responseText);
@@ -181,6 +181,7 @@ $('#create').on('click', function() {
 		}
 		console.log(request.responseText);
 		RefreshCaptcha();
+		Update();
 	});
 	//ws.send(JSON.stringify(data));
 	$('#status').text('waiting for response...');
